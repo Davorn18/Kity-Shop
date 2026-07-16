@@ -74,24 +74,24 @@ img {
     }
 
     .form-control {
-        width: 100%;
+        width: 100%; /* ធ្វើឱ្យ Search Box មានទទឹងពេញ */
     }
 
     .btn {
-        white-space: nowrap;
+        white-space: nowrap; /* មិនឱ្យអក្សរនៅក្នុង Button បែកជាពីរបន្ទាត់ */
     }
 
 }
 
 /* Tablet */
-@media (min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) { 
 
-    .navbar-brand {
-        font-size: 30px;
+    .navbar-brand { /* ធ្វើឱ្យ Logo មានទំហំតូចជាង */
+        font-size: 30px; 
     }
 
-    .nav-link {
-        font-size: 18px;
+    .nav-link { 
+        font-size: 18px; /* ធ្វើឱ្យ Menu មានទំហំតូចជាង */
     }
 
 }
@@ -102,19 +102,19 @@ img {
 .slider-img {
     width: 100%;
     height: 600px;
-    object-fit: cover;
-    object-position: center;
+    object-fit: cover; /* ធ្វើឱ្យរូបភាពបំពេញទំហំដោយរក្សាភាពសមរម្យ */
+    object-position: center; /* ធ្វើឱ្យរូបភាពនៅកណ្តាល */
 }
 
 /* Dark Overlay */
 .carousel-item {
-    position: relative;
+    position: relative; /* ធ្វើឱ្យមានការតំណាងសម្រាប់ Overlay */
 }
 
 .carousel-item::before {
     content: "";
-    position: absolute;
-    top: 0;
+    position: absolute; /* ធ្វើឱ្យ Overlay គ្របដណ្តប់លើរូបភាព */
+    top: 0; /* ធ្វើឱ្យ Overlay ចាប់ផ្តើមពីលើ */
     left: 0;
     width: 100%;
     height: 100%;
@@ -123,8 +123,8 @@ img {
 
 /* Caption */
 .carousel-caption {
-    bottom: 18%;
-    z-index: 2;
+    bottom: 18%; 
+    z-index: 2; /* ធ្វើឱ្យ Caption នៅលើ Overlay */
 }
 
 .carousel-caption h1 {
@@ -168,7 +168,7 @@ img {
     }
 
     .carousel-caption {
-        bottom: 10%;
+        bottom: 20%;
     }
 
     .carousel-caption h1 {
@@ -201,12 +201,12 @@ img {
     padding: 30px 20px;
     text-align: center;
     height: 100%;
-    transition: .3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08); /* ធ្វើឱ្យមានស្រមោលស្រាលនៅក្រោមកាត */
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px); /* ធ្វើឱ្យកាតលោតឡើងខ្ពស់បន្តិចនៅពេល Hover */
     box-shadow: 0 12px 25px rgba(0, 0, 0, .15);
 }
 
@@ -240,7 +240,7 @@ img {
 .service-card p {
     color: #666;
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.7; /* ធ្វើឱ្យមានចន្លោះខ្ពស់នៅក្នុងអត្ថបទ */
 }
 
 /* Tablet */
@@ -283,9 +283,6 @@ img {
 }
 
 /* ===================================================================Top Product Card================================================ */
-/* ===========================
-   TOP PRODUCT SECTION
-=========================== */
 
 .top-product {
     background: #f8f9fa;
@@ -293,7 +290,7 @@ img {
 
 .top-product h2 {
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* ធ្វើឱ្យអក្សរមានចន្លោះបន្តិច */
 }
 
 .top-product p {
@@ -310,12 +307,12 @@ img {
     border-radius: 15px;
     overflow: hidden;
     background: #fff;
-    transition: all .3s ease;
+    transition: all .3s ease; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px); /* ធ្វើឱ្យកាតលោតឡើងខ្ពស់បន្តិចនៅពេល Hover */
     box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
 }
 
@@ -326,12 +323,13 @@ img {
 .product-img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    transition: .5s;
+    object-fit: cover; /* ធ្វើឱ្យរូបភាពបំពេញទំហំដោយរក្សាភាពសមរម្យ */
+    object-position: center; /* ធ្វើឱ្យរូបភាពនៅកណ្តាល */
+    transition: .5s; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.08);
+    transform: scale(1.08); /* ធ្វើឱ្យរូបភាពធំឡើងបន្តិចនៅពេល Hover */
 }
 
 /* ===========================
@@ -352,12 +350,12 @@ img {
     cursor: pointer;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
     transition: .3s;
-    z-index: 2;
+    z-index: 2; /* ធ្វើឱ្យ Wishlist នៅលើរូបភាព */
 }
 
 .wishlist:hover {
     color: #ff4d6d;
-    transform: scale(1.1);
+    transform: scale(1.1); /* ធ្វើឱ្យមានការធំឡើងបន្តិចនៅពេល Hover */
 }
 
 /* ===========================
@@ -365,9 +363,9 @@ img {
 =========================== */
 
 .sale-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
+    position: absolute; /* ធ្វើឱ្យ Sale Badge មានទីតាំងនៅលើកាត */
+    top: 15px; /* ធ្វើឱ្យ Sale Badge ចាប់ផ្តើមពីលើ */
+    left: 15px; /* ធ្វើឱ្យ Sale Badge ចាប់ផ្តើមពីឆ្វេង */
     padding: 7px 12px;
     border-radius: 20px;
     font-size: 12px;
@@ -410,11 +408,11 @@ img {
 .btn-dark {
     border-radius: 25px;
     padding: 6px 18px;
-    transition: .3s;
+    transition: .3s; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
 }
 
 .btn-dark:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* ធ្វើឱ្យ Button ធំឡើងបន្តិចនៅពេល Hover */
 }
 
 /* ===========================
@@ -437,7 +435,7 @@ img {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000;
+    background-color: #000000;
     border-radius: 50%;
     padding: 18px;
 }
@@ -529,14 +527,14 @@ img {
 .kuromi-card {
     border: none;
     border-radius: 15px;
-    overflow: hidden;
-    transition: .35s;
+    overflow: hidden; /* ធ្វើឱ្យរូបភាពនៅក្នុងកាតមិនលេចចេញពីកាត */
+    transition: .35s; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
     box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
 }
 
 .kuromi-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
+    transform: translateY(-8px); /* ធ្វើឱ្យកាតលោតឡើងខ្ពស់បន្តិច */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .15); /* ធ្វើឱ្យមានស្រមោលខ្លាំងបន្តិចនៅពេល Hover */
 }
 
 .kuromi-card img {
@@ -547,7 +545,7 @@ img {
 }
 
 .kuromi-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.08); /* ធ្វើឱ្យរូបភាពធំឡើងបន្តិចនៅពេល Hover */
 }
 
 .kuromi-card .card-body {
@@ -624,7 +622,7 @@ img {
 .cardd img {
     width: 100%;
     height: 280px;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
 
@@ -719,19 +717,19 @@ img {
 
 .sale-text span {
     font-size: 50px;
-    text-transform: uppercase;
-    line-height: 1.2;
+    text-transform: uppercase; /* ធ្វើឱ្យអក្សរតូចៗក្លាយជាអក្សរធំ */
+    line-height: 1.2; /* ធ្វើឱ្យអក្សរមានចន្លោះខ្ពស់ */
 }
 
 .sale-text button {
     margin-top: 15px;
     padding: 10px 25px;
     border: none;
-    outline: none;
+    outline: none; /* ធ្វើឱ្យ Button មិនមាន Outline នៅពេល Click */
     background-color: black;
     color: azure;
     font-size: 25px;
-    cursor: pointer;
+    cursor: pointer; /* ធ្វើឱ្យ Cursor បង្ហាញជា Pointer នៅពេល Hover */
 }
 
 
@@ -794,13 +792,13 @@ img {
 
 .last-post {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* ធ្វើឱ្យរូបភាពនៅក្នុងកាតមិនលេចចេញពីកាត */
     transition: 0.3s ease;
 }
 
 
 .last-post:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* ធ្វើឱ្យកាតលោតឡើងខ្ពស់បន្តិច */
 }
 
 
@@ -828,7 +826,7 @@ img {
     border: none;
     background: none;
     text-transform: uppercase;
-    text-decoration: underline;
+    text-decoration: underline; /* ធ្វើឱ្យអក្សរមានខ្សែបន្ទាត់ក្រោម */
 }
 
 
@@ -859,9 +857,9 @@ img {
 /* ===================================================================Quote================================================ */
 
 .review-box {
-    min-height: 450px;
+    min-height: 450px; /* ធ្វើឱ្យកាតមានទំហំទាបបំផុត */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* ធ្វើឱ្យកាតមានទិសដៅបញ្ឈរ */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -983,16 +981,16 @@ img {
 .subscribe-form form {
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 10px; /* ធ្វើឱ្យមានចន្លោះ 10px រវាង Input និង Button */
 }
 
 
 .subscribe-form input {
 
-    flex: 1;
+    flex: 1; /* ធ្វើឱ្យ Input មានទំហំបំពេញទាំងអស់នៅក្នុង Form */
     padding: 10px 20px;
     outline: none;
-    border: none;
+    border: none; /* ធ្វើឱ្យ Input មិនមាន Border */
 
 }
 
@@ -1174,7 +1172,7 @@ img {
 .footer-list {
 
     padding: 0;
-    list-style: none;
+    list-style: none; /* ធ្វើឱ្យ List មិនមាន Bullet Points */
 
 }
 
@@ -1191,7 +1189,7 @@ img {
 
 .footer-list li:hover {
 
-    text-decoration: underline;
+    text-decoration: underline; /* ធ្វើឱ្យអក្សរមានខ្សែបន្ទាត់ក្រោមនៅពេល Hover */
 
 }
 
@@ -1211,7 +1209,7 @@ img {
 .social-icons i {
 
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s; /* ធ្វើឱ្យមាន Transition នៅពេល Hover */
 
 }
 
@@ -1219,7 +1217,7 @@ img {
 .social-icons i:hover {
 
     color: black;
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* ធ្វើឱ្យ Icon លោតឡើងខ្ពស់បន្តិចនៅពេល Hover */
 
 }
 
@@ -1289,13 +1287,20 @@ img {
 
 }
 
-
+.shipping-logo:hover {
+    transform: scale(1.1); /* ធ្វើឱ្យរូបភាពធំឡើងបន្តិចនៅពេល Hover */
+    transition: 0.3s ease;
+}   
 
 .payment-logo {
 
     width: 70px;
     margin: 0 5px;
 
+}
+.payment-logo:hover {
+    transform: scale(1.1); /* ធ្វើឱ្យរូបភាពធំឡើងបន្តិចនៅពេល Hover */
+    transition: 0.3s ease;
 }
 
 
